@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <script>
+            {
+                var onClick = function(e){
+                    console.log(e);
+                    document.getElementById("focus").innerHTML = e.innerHTML;
+                    document.getElementById("focus").style.display= "block";
+                    document.getElementById("cv").style.opacity=0.1;
+                }
+
+                var onHide = function(e){
+                    e.style.display= "none";
+                    document.getElementById("cv").style.opacity=1;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <div id='focus' onclick="onHide(this)"></div>
+        </section>
+        <section id='cv'>
+        <header>
+            <div class="photo">
+                <a href="https://linkedin.com/in/eitan-hyams"><img src="eitan.png"/> </a>
+            </div>
+                    <div class="name">
+                        Eitan Hyams
+                    </div>
+                    <div class="title">
+                        Software Developer
+                    </div>
+                <div class="aboutMe" onclick="onClick(this)">
+                        A Mamram programming course graduate with vast experience in development, 
+                        customization and implementation of enterprise systems using multiple programming languages & technologies, 
+                        seeking a fullstack position.
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="leftPane">
+                <div class="cvSection" onclick="onClick(this)">
+                    <div class="sectionHeader">
+                        Skills & Technologies
+                    </div>
+                    <div class="itemHeader">
+                        Languages
+                    </div>
+                    <div class="itemContent">
+                        JavaScript (ES6), Java, C#
+                    </div>
+                    <div class="itemHeader">
+                            Front End Related
+                    </div>
+                    <div class="itemContent">
+                            ReactJS, Redux
+                    </div>
+                    <div class="itemHeader">
+                            Back End Related
+                    </div>
+                    <div class="itemContent">
+                         Node.js, WebSocket, Redis, CouchDB, Oracle DB
+                    </div>
+                    <div class="itemHeader">
+                            Tools
+                    </div>
+                    <div class="itemContent">
+                         Git, Webpack
+                    </div>
+                    <div class="itemHeader">
+                            OS
+                    </div>
+                    <div class="itemContent">
+                         Windows & Linux
+                    </div>
+                    <div class="itemHeader">
+                            IDE
+                    </div>
+                    <div class="itemContent">
+                            WebStorm, Visual Studio, Eclipse, JDeveloper
+                    </div>
+                </div>
+
+                <div class="cvSection" onclick="onClick(this)">
+                    <div class="sectionHeader">
+                        Work Experience
+                    </div>
+                    <div class="itemHeader">
+                            Developer, Brillix <span class="years">2016 - </span>
+                    </div>
+                    <div class="itemContent">
+                        Senior developer on the security team, which provided Identity and Access management solutions for enterprises.
+                        <div class="bullet">
+                                ▪ Developed core lifecycle processes for Identity & Access management systems at big organizations (Teva & Amdocs).
+                        </div>
+                        <div class="bullet">
+                                ▪ Developed additional integrations between IDM products & customer requested applications and systems.
+                        </div>
+                        <div class="bullet">
+                                ▪ Integrated with various API’s and wrote many SQL based reports.
+                        </div>
+                    </div>
+                    <div class="itemHeader">
+                            Programmer, Mamram <span class="years">2012 - 2016 </span>
+                    </div>
+                    <div class="itemContent">
+                            Developer on the Monitoring & CRM team
+                        <div class="bullet">
+                                ▪ Developed multiple web services used for integrations with other products.
+                        </div>
+                        <div class="bullet">
+                                ▪ Developed a SPA which provided monitoring data and live status of specific services.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightPane">
+                    <div class="cvSection" onclick="onClick(this)">
+                        <div class="sectionHeader">
+                                Contact
+                        </div>
+                        <div class="itemContent">
+                                ▪ eitanhy@gmail.com
+                        </div>
+                        <div class="itemContent">
+                                ▪ 054 6432119 
+                                
+                        </div>
+                        <div class="itemContent">
+                                ▪ <a href="https://linkedin.com/in/eitan-hyams">Linkedin</a> 
+                        </div>
+                    </div>
+
+                    <div class="cvSection" onclick="onClick(this)">
+                            <div class="sectionHeader">
+                                    Education
+                            </div>
+                            <div class="itemHeader">
+                                Programming Course,  <span class="years"> 2012 </span>
+                                <br>
+                                Mamram
+                            </div>
+                            <div class="itemContent">
+                                    6-month programming course.
+                            </div>
+                            <div class="itemHeader">
+                                    Additional Courses
+                            </div>
+                            <div class="itemContent">
+                                    Extreme .NET 4.0 (John Bryce)
+                            </div>
+                            <div class="itemContent">
+                                    Oracle DBA 1 (John Bryce)
+                            </div>
+                            <div class="itemContent">
+                                    AngularJS (Mamram)
+                            </div>
+                    </div>
+
+                    <div class="cvSection" onclick="onClick(this)">
+                            <div class="sectionHeader">
+                                    Additional Skills & Abilities
+                            </div>
+                            <div class="itemContent">HTML, CSS & SCSS</div>
+                            <div class="itemContent">Working with Relational & NoSQL DB’s</div>
+                            <div class="itemContent">Consuming and creating SOAP & REST services</div>
+                            <div class="itemContent">Working with Weblogic, IIS, Play Framework & JBoss</div>
+                            <div class="itemContent">Extremely fluent in English</div>
+
+                    </div>
+            </div>
+            
+        </article>
+    </section>
+    </body>
+</html>

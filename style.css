@@ -1,0 +1,111 @@
+
+
+#focus{
+    z-index: 2;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    border: 0.5rem black solid;
+    padding: 1rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+body{
+    font-family: Arial;
+    font-weight: lighter;
+    font-style: normal;
+}
+body > section{
+    margin: 0 auto;
+    width: 75vw;
+}
+header{
+    background-color: #001f3f;
+    font-size: 3rem;
+    color: #7FDBFF;
+    vertical-align: top;
+    display: grid;
+    margin-top: 1.5rem;
+}
+header .photo{
+    grid-area: 1 / 1 / 5 / 2;
+    padding: 1rem;
+}
+header img{
+    opacity: 0.7;
+    height: 7rem;
+    border-radius: 2rem;
+}
+header img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+header .name{
+    font-size: 4rem;
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: end;
+}
+header .title{
+    font-size: 1.5rem;
+    grid-area: 3 / 2 / 5 / 3;
+}
+header .aboutMe{
+    font-size: 1rem;
+    cursor: pointer;
+    grid-area: 2 / 3 / 4 / 4;
+    align-self: stretch;
+    margin-left: 1rem;   
+}
+article{
+    border: 1px black solid;
+    padding: 1rem;
+    height: 68vh;
+    overflow: auto;
+}
+
+
+article > div{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    
+}
+
+.leftPane{
+    width: 65%;
+    height: 95%;
+    border-right: 0.5rem lightsalmon solid;
+}
+
+.rightPane{
+    margin-left: 1em;
+    width: 30%;
+}
+
+.cvSection{
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+article > div > .cvSection > .sectionHeader{
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+}
+article > div > .cvSection > .itemHeader{
+    color: black;
+    font-size: 1.15rem;
+}
+article > div > .cvSection > .itemContent{
+    color: black;
+    font-size: 0.8rem;
+}
+.itemHeader > .years{
+    float: right;
+    margin-right: 2em;
+}
+.itemContent > .bullet{
+    margin-left: 2em;
+    width: 75%;
+}
